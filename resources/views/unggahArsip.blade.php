@@ -13,7 +13,7 @@
     <h2 class="my-4" style="font-family: 'Roboto', sans-serif;">Arsip Surat >> Unngah</h2>
     <p class="custom-font">Unggah surat yang telah terbit pada form ini untuk diarsipkan.
     <br>Catatan. <br> - Gunakan file berformat PDF</p>
-    <form method="POST" action="" enctype="multipart/form-data">
+    <form method="POST" action="{{route('arsip.create')}}" enctype="multipart/form-data">
         @csrf
         <div class="mb-3">
             <label for="nomor_surat" class="form-label">Nomor Surat</label>
